@@ -95,4 +95,17 @@
              }
     }
  }
+
+ function sum(num5, num6) { //Детермінована функція // Чиста функція
+    return num5+num6;
+ }
  
+ function getRandom () { //Не детермінована
+    return Math.random();
+ }
+
+ function mulyply(num7,num8) { //Детермінована, але має "побічний ефект"
+    let res = num7*num8;
+    console.log('Result = ', res);
+    return res;
+ }
