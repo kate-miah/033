@@ -109,3 +109,39 @@
     console.log('Result = ', res);
     return res;
  }
+
+ let value=7; //Глобальна змінна
+
+ function logger() { //Локальна областьвидимості
+    let value ='a';  // Локальна змінна
+    console.log(value);
+ }
+
+ function anotherFun() { // Використається глобальна змінна
+    console.log(value);
+ }
+ logger();
+
+ //Цикли
+
+//  while (2+2===4) {           //буде безкінечний цикл
+//     console.log(true);
+//  }
+
+ let counter = 0;
+ while (counter < 4) {
+    console.log(true);
+    counter++;
+ }
+
+ let counter1 = 4;
+ while (counter1 > 0) {
+    console.log(counter1);
+    counter1--;
+ }
+
+  let counter2 = 0;
+ while (counter2 < 5) {
+    console.log(counter2);
+    counter2++;
+ }
